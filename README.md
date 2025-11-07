@@ -348,6 +348,15 @@ pip install -r requirements-dev.txt
 
 **2. Run Tests**
 
+The easiest way to run tests:
+
+```bash
+# Using the test runner script
+python run_tests.py
+```
+
+Or using pytest directly:
+
 ```bash
 # Run all tests
 pytest
