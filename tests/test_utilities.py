@@ -56,7 +56,6 @@ class TestPathOperations:
         """Test output path normalization with directory."""
         source_path = "source.png"
         target_path = "target.mp4"
-        output_path = "/output/dir"
         
         # Create a temporary directory for testing
         with tempfile.TemporaryDirectory() as tmpdir:
@@ -69,12 +68,13 @@ class TestPathOperations:
         """Test output path normalization with file."""
         source_path = "source.png"
         target_path = "target.mp4"
-        output_path = "/output/result.mp4"
+        output_path = os.path.join("output", "result.mp4")
         
         result = normalize_output_path(source_path, target_path, output_path)
         assert result == output_path
 
     def test_normalize_output_path_missing_params(self):
         """Test output path normalization with missing parameters."""
-        result = normalize_output_path(None, None, "/output/result.mp4")
-        assert result == "/output/result.mp4"
+        output_path = os.path.join("output", "result.mp4")
+        result = normalize_output_path(None, None, output_path)
+        assert result == output_path

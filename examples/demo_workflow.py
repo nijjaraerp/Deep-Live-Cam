@@ -119,6 +119,8 @@ def show_cli_examples():
     print("Command-Line Examples")
     print("=" * 70)
     print()
+    print("Note: For Windows, replace '\\' with '^' for line continuation")
+    print()
     
     print("1. Basic face swap (GUI):")
     print("   python run.py")
