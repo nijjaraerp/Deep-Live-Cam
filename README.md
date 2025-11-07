@@ -38,6 +38,14 @@ Users are expected to use this software responsibly and legally. If using a real
  
 ###### These Pre-builts are perfect for non-technical users or those who don't have time to, or can't manually install all the requirements. Just a heads-up: this is an open-source project, so you can also install it manually. 
 
+## 🚀 Quick Start
+
+**New to Deep-Live-Cam?** Check out the [QUICK_START.md](QUICK_START.md) guide to get running in minutes!
+
+**Want to test it?** After cloning, run `python run_tests.py` to verify your setup.
+
+**Need usage help?** See [examples/USAGE_GUIDE.md](examples/USAGE_GUIDE.md) for detailed instructions.
+
 ## TLDR; Live Deepfake in just 3 Clicks
 ![easysteps](https://github.com/user-attachments/assets/af825228-852c-411b-b787-ffd9aac72fc6)
 1. Select a face
@@ -293,10 +301,18 @@ python run.py --execution-provider openvino
 
 ## Usage
 
+**Quick Start:**
+
+See the comprehensive [Usage Guide](examples/USAGE_GUIDE.md) for detailed instructions, or run the demo workflow:
+
+```bash
+python examples/demo_workflow.py
+```
+
 **1. Image/Video Mode**
 
 -   Execute `python run.py`.
--   Choose a source face image and a target image/video.
+-   Choose a source face image (the face to swap IN) and a target image/video (where faces will be detected).
 -   Click "Start".
 -   The output will be saved in a directory named after the target video.
 
@@ -308,6 +324,8 @@ python run.py --execution-provider openvino
 -   Wait for the preview to appear (10-30 seconds).
 -   Use a screen capture tool like OBS to stream.
 -   To change the face, select a new source image.
+
+For step-by-step instructions with examples, see [examples/USAGE_GUIDE.md](examples/USAGE_GUIDE.md).
 
 ## Command Line Arguments (Unmaintained)
 
@@ -335,6 +353,27 @@ options:
 ```
 
 Looking for a CLI mode? Using the -s/--source argument will make the run program in cli mode.
+
+## Testing
+
+Yes! After cloning the repository, you can run the test suite to verify your installation is working correctly.
+
+**Quick Start:**
+
+```bash
+# Install test dependencies
+pip install -r requirements-dev.txt
+
+# Run tests
+python run_tests.py
+```
+
+The test suite includes:
+- Basic module import tests
+- Utility function tests (file type detection, path operations)
+- Configuration validation tests
+
+For detailed testing instructions, troubleshooting, and more information, see [TESTING.md](TESTING.md).
 
 ## Press
 
