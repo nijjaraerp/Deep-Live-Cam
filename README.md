@@ -38,6 +38,14 @@ Users are expected to use this software responsibly and legally. If using a real
  
 ###### These Pre-builts are perfect for non-technical users or those who don't have time to, or can't manually install all the requirements. Just a heads-up: this is an open-source project, so you can also install it manually. 
 
+## 🚀 Quick Start
+
+**New to Deep-Live-Cam?** Check out the [QUICK_START.md](QUICK_START.md) guide to get running in minutes!
+
+**Want to test it?** After cloning, run `python run_tests.py` to verify your setup.
+
+**Need usage help?** See [examples/USAGE_GUIDE.md](examples/USAGE_GUIDE.md) for detailed instructions.
+
 ## TLDR; Live Deepfake in just 3 Clicks
 ![easysteps](https://github.com/user-attachments/assets/af825228-852c-411b-b787-ffd9aac72fc6)
 1. Select a face
