@@ -338,47 +338,24 @@ Looking for a CLI mode? Using the -s/--source argument will make the run program
 
 ## Testing
 
-After cloning the repository, you can run the test suite to verify your installation is working correctly.
+Yes! After cloning the repository, you can run the test suite to verify your installation is working correctly.
 
-**1. Install Test Dependencies**
+**Quick Start:**
 
 ```bash
+# Install test dependencies
 pip install -r requirements-dev.txt
-```
 
-**2. Run Tests**
-
-The easiest way to run tests:
-
-```bash
-# Using the test runner script
+# Run tests
 python run_tests.py
 ```
-
-Or using pytest directly:
-
-```bash
-# Run all tests
-pytest
-
-# Run tests with verbose output
-pytest -v
-
-# Run specific test file
-pytest tests/test_utilities.py
-
-# Run tests with coverage report
-pytest --cov=modules --cov-report=html
-```
-
-**3. Test Coverage**
 
 The test suite includes:
 - Basic module import tests
 - Utility function tests (file type detection, path operations)
 - Configuration validation tests
 
-Some tests require full dependencies (like insightface, tkinter) and will be skipped if not installed. This is normal for a minimal installation check.
+For detailed testing instructions, troubleshooting, and more information, see [TESTING.md](TESTING.md).
 
 ## Press
 
