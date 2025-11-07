@@ -293,10 +293,18 @@ python run.py --execution-provider openvino
 
 ## Usage
 
+**Quick Start:**
+
+See the comprehensive [Usage Guide](examples/USAGE_GUIDE.md) for detailed instructions, or run the demo workflow:
+
+```bash
+python examples/demo_workflow.py
+```
+
 **1. Image/Video Mode**
 
 -   Execute `python run.py`.
--   Choose a source face image and a target image/video.
+-   Choose a source face image (the face to swap IN) and a target image/video (where faces will be detected).
 -   Click "Start".
 -   The output will be saved in a directory named after the target video.
 
@@ -308,6 +316,8 @@ python run.py --execution-provider openvino
 -   Wait for the preview to appear (10-30 seconds).
 -   Use a screen capture tool like OBS to stream.
 -   To change the face, select a new source image.
+
+For step-by-step instructions with examples, see [examples/USAGE_GUIDE.md](examples/USAGE_GUIDE.md).
 
 ## Command Line Arguments (Unmaintained)
 
